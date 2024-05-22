@@ -69,7 +69,7 @@ function playGame() {
     while (player1Pokemon.health > 0 && player2Pokemon.health > 0) {
         console.log(`${player1Pokemon.getColorText(player1Pokemon.name)}'s Health: ${player1Pokemon.health}`);
         console.log(`${player2Pokemon.getColorText(player2Pokemon.name)}'s Health: ${player2Pokemon.health}`);
-        console.log('\n'); // Add a space
+        console.log('\n'); 
 
         attackPhase(player1Pokemon, player2Pokemon);
         if (player2Pokemon.health <= 0) break;
